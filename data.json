@@ -1,0 +1,64 @@
+{
+    "projects":[ 
+        { 
+            "id":"0",
+            "project_name":"Random Quote Generator",
+            "description":"Displays tasteful quotes",
+            "technologies":["JavaScript", "CSS", "HTML"],
+            "live_link":,
+            "github_link":,
+            "image_urls":
+        },
+        
+        { 
+            "id":"1",
+            "project_name":"List Pagination and Filtering",
+            "description":"Paginates list of Students",
+            "technologies":["JavaScript", "CSS", "HTML"],
+            "live_link":,
+            "github_link":,
+            "image_urls":
+        },
+
+        { 
+            "id":"2",
+            "project_name":"Interactive Form",
+            "description":"Conference registration form",
+            "technologies":["JavaScript", "CSS", "HTML"],
+            "live_link":,
+            "github_link":,
+            "image_urls":
+        },
+      
+        { 
+            "id":"3",
+            "project_name":"OOP Game Show App",
+            "description":"Browser-based guessing game called Phrase Hunter",
+            "technologies":["JavaScript", "CSS", "HTML"],
+            "live_link":,
+            "github_link":,
+            "image_urls":
+        },
+
+        { 
+            "id":"4",
+            "project_name":"Public API Request",
+            "description":"Employee directory page",
+            "technologies":["JavaScript", "API", "CSS", "HTML"],
+            "live_link":,
+            "github_link":,
+            "image_urls":
+        },
+    
+        { 
+            "id":"5",
+            "project_name":"Static Node.js and Express Site",
+            "description":"Personal portfolio webpage",
+            "technologies":["JavaScript", "CSS", "HTML"],
+            "live_link":,
+            "github_link":,
+            "image_urls":
+        }
+
+    ]
+}
