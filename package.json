@@ -2,7 +2,7 @@
   "name": "static-node.js-and-express-site",
   "version": "1.0.0",
   "description": "Static Node.js and Express Site to showcase projects",
-  "main": "index.js",
+  "main": "/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +19,7 @@
   "dependencies": {
     "debug": "^2.6.9",
     "express": "^4.17.1",
+    "node": "^15.12.0",
     "nodemon": "^2.0.7",
     "pug": "^3.0.2"
   }

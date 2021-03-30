@@ -1,7 +1,6 @@
 const express = require('express');
-const pug = require('pug');
 const data = require('./data.json');
-const port = 3000;
+
 const app = express();
 
 app.use(express.urlencoded({ extended: false }));
@@ -9,17 +8,24 @@ app.use('/static', express.static('public'));
 
 app.set('view engine', 'pug');
 
+// routes
 app.get('/', function (req, res) {
   res.render('index', data);
 });
 
 app.get('/about', function (req, res) {
-  res.render('index', data);
+  res.render('about', data);
 });
+
+app.get('/project', function (req, res) {
+  res.render('project', data);
+});
+
+
 
 app.get('/projects/:id', function (req, res) {
   let id = req.params.id;
-  let project = data.Projects[id];
+  let project = data.projects[id];
   if(project) {
     res.render('project',project);
   } else {
@@ -27,12 +33,8 @@ app.get('/projects/:id', function (req, res) {
   }
 })
 
-//const mainRoutes = require('./routes');
-//const cardRoutes = require('./routes/cards');
 
-//app.use(mainRoutes);
-//app.use('/cards', cardRoutes);
-
+// error handlers
 app.use((req, res, next) => {
   const err = new Error('Not Found');
   err.status = 404;
@@ -45,6 +47,7 @@ app.use((err, req, res, next) => {
   res.render('error');
 });
 
-app.listen(port, () => {
-    console.log(`The application is running on localhost:${port}!`);
+
+app.listen(3000, () => {
+    console.log('The application is running on localhost:3000');
 });
