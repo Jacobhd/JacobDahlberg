@@ -1,5 +1,7 @@
 const express = require('express');
-const data = require('./data.json');
+const data = require('./data.json'); //import file
+const projects = data.projects;
+//const { projects } = require("../data.json");
 
 const app = express();
 
@@ -10,7 +12,8 @@ app.set('view engine', 'pug');
 
 // routes
 app.get('/', function (req, res) {
-  res.render('index', data);
+  //console.log(data.projects);
+  res.render('index', { projects });
 });
 
 app.get('/about', function (req, res) {
@@ -38,6 +41,7 @@ app.get('/projects/:id', function (req, res) {
 app.use((req, res, next) => {
   const err = new Error('Not Found');
   err.status = 404;
+  //err.message = "Oh noes!";
   next(err);
 });
 

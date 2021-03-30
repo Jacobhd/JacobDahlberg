@@ -6,7 +6,7 @@
             "description":"Displays tasteful quotes",
             "technologies":["JavaScript", "CSS", "HTML"],
             "live_link":"live link",
-            "github_link":"github link",
+            "github_link":"https://github.com/Jacobhd/Random-Quote-Generator",
             "image_urls":"img urls"
         },
         
@@ -16,7 +16,7 @@
             "description":"Paginates list of Students",
             "technologies":["JavaScript", "CSS", "HTML"],
             "live_link":"live link",
-            "github_link":"github link",
+            "github_link":"https://github.com/Jacobhd/List-Pagination-and-Filtering",
             "image_urls":"img urls"
         },
 
@@ -26,7 +26,7 @@
             "description":"Conference registration form",
             "technologies":["JavaScript", "CSS", "HTML"],
             "live_link":"live link",
-            "github_link":"github link",
+            "github_link":"https://github.com/Jacobhd/Interactive-Form",
             "image_urls":"img urls"
         },
       
@@ -36,7 +36,7 @@
             "description":"Browser-based guessing game called Phrase Hunter",
             "technologies":["JavaScript", "CSS", "HTML"],
             "live_link":"live link",
-            "github_link":"github link",
+            "github_link":"https://github.com/Jacobhd/OOP-Game-Show-App",
             "image_urls":"img urls"
         },
 
@@ -46,7 +46,7 @@
             "description":"Employee directory page",
             "technologies":["JavaScript", "API", "CSS", "HTML"],
             "live_link":"live link",
-            "github_link":"github link",
+            "github_link":"https://github.com/Jacobhd/Public-API-Request",
             "image_urls":"img urls"
         },
     
@@ -56,7 +56,7 @@
             "description":"Personal portfolio webpage",
             "technologies":["JavaScript", "CSS", "HTML"],
             "live_link":"live link",
-            "github_link":"github link",
+            "github_link":"https://github.com/Jacobhd/Static-Node.js-and-Express-Site",
             "image_urls":"img urls"
         }
 
