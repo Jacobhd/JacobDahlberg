@@ -1,4 +1,5 @@
 const express = require('express');
+//const { allowedNodeEnvironmentFlags } = require('node:process');
 const data = require('./data.json'); //import file
 const projects = data.projects;
 //const { projects } = require("../data.json");
@@ -20,10 +21,11 @@ app.get('/about', function (req, res) {
   res.render('about', data);
 });
 
+//
 app.get('/project', function (req, res) {
   res.render('project', data);
 });
-
+//
 
 
 app.get('/projects/:id', function (req, res) {
@@ -37,14 +39,17 @@ app.get('/projects/:id', function (req, res) {
 })
 
 
-// error handlers
+/* ERROR HANDLERS */ 
+
+/* 404 handler catch undefined route requests */
 app.use((req, res, next) => {
   const err = new Error('Not Found');
   err.status = 404;
-  //err.message = "Oh noes!";
+  err.message = "Oh noes! Page not found.";
   next(err);
 });
 
+/* renders user friendly 404 page */
 app.use((err, req, res, next) => {
   res.locals.error = err;
   res.status(err.status);

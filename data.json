@@ -1,21 +1,21 @@
 {
     "projects":[ 
         { 
-            "id":"0",
+            "id": 0,
             "project_name":"Random Quote Generator",
             "description":"Displays tasteful quotes",
             "technologies":["JavaScript", "CSS", "HTML"],
-            "live_link":"live link",
+            "live_link":"https://Jacobhd.github.io/Random-Quote-Generator/",
             "github_link":"https://github.com/Jacobhd/Random-Quote-Generator",
             "image_urls":"img urls"
         },
         
         { 
-            "id":"1",
+            "id": 1,
             "project_name":"List Pagination and Filtering",
             "description":"Paginates list of Students",
             "technologies":["JavaScript", "CSS", "HTML"],
-            "live_link":"live link",
+            "live_link":"https://Jacobhd.github.io/List-Pagination-and-Filtering/",
             "github_link":"https://github.com/Jacobhd/List-Pagination-and-Filtering",
             "image_urls":"img urls"
         },
@@ -24,8 +24,8 @@
             "id":"2",
             "project_name":"Interactive Form",
             "description":"Conference registration form",
-            "technologies":["JavaScript", "CSS", "HTML"],
-            "live_link":"live link",
+            "technologies":["JavaScript", "CSS3", "HTML5"],
+            "live_link":"https://Jacobhd.github.io/Interactive-Form/",
             "github_link":"https://github.com/Jacobhd/Interactive-Form",
             "image_urls":"img urls"
         },
@@ -34,8 +34,8 @@
             "id":"3",
             "project_name":"OOP Game Show App",
             "description":"Browser-based guessing game called Phrase Hunter",
-            "technologies":["JavaScript", "CSS", "HTML"],
-            "live_link":"live link",
+            "technologies":["JavaScript", "CSS3", "HTML5"],
+            "live_link":"https://Jacobhd.github.io/OOP-Game-Show-App/",
             "github_link":"https://github.com/Jacobhd/OOP-Game-Show-App",
             "image_urls":"img urls"
         },
@@ -44,8 +44,8 @@
             "id":"4",
             "project_name":"Public API Request",
             "description":"Employee directory page",
-            "technologies":["JavaScript", "API", "CSS", "HTML"],
-            "live_link":"live link",
+            "technologies":["JavaScript", "API", "CSS3", "HTML5"],
+            "live_link":"https://Jacobhd.github.io/Public-API-Request/",
             "github_link":"https://github.com/Jacobhd/Public-API-Request",
             "image_urls":"img urls"
         },
@@ -54,8 +54,8 @@
             "id":"5",
             "project_name":"Static Node.js and Express Site",
             "description":"Personal portfolio webpage",
-            "technologies":["JavaScript", "CSS", "HTML"],
-            "live_link":"live link",
+            "technologies":["JavaScript", "CSS3", "HTML5"],
+            "live_link":"https://Jacobhd.github.io/Static-Node-and-Express-Site",
             "github_link":"https://github.com/Jacobhd/Static-Node.js-and-Express-Site",
             "image_urls":"img urls"
         }
