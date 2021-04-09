@@ -1,8 +1,6 @@
 const express = require('express');
-//const { allowedNodeEnvironmentFlags } = require('node:process');
 const data = require('./data.json'); //import file
 const projects = data.projects;
-//const { projects } = require("../data.json");
 
 const app = express();
 
@@ -10,6 +8,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use('/static', express.static('public'));
 
 app.set('view engine', 'pug');
+
 
 // routes
 app.get('/', function (req, res) {
@@ -21,22 +20,20 @@ app.get('/about', function (req, res) {
   res.render('about', data);
 });
 
-//
-app.get('/project', function (req, res) {
-  res.render('project', data);
-});
-//
-
+// navigating to /project produces status:500
+// app.get('/project', function (req, res) {
+//   res.render('project', data);
+// });
 
 app.get('/projects/:id', function (req, res) {
   let id = req.params.id;
   let project = data.projects[id];
   if(project) {
-    res.render('project',project);
+    res.render('project', project);
   } else {
     res.redirect('/404');
   }
-})
+});
 
 
 /* ERROR HANDLERS */ 

@@ -17,24 +17,24 @@ block content
         h1 #{projects.project_name}
 
         //- Use interpolation to dynamically add the project description
-        p | #{project.description}
+        p | #{projects.description}
 
       .project-tech-links-box.box
         h6 Technologies
         ul
 
           //- Use an `each` iterator and interpolation to dynamically replace the li tags below with the technologies listed for this project
-          each technology in project.technologies
+          each technology in projects.technologies
             li #{technology}
 
         //- Add the href values to the links below
-        a.btn-link(href=project.live_link) Live Demo
-        a.btn-link(href=project.github.link) GitHub Repo
+        a.btn-link(href=projects.live_link) Live Demo
+        a.btn-link(href=projects.github.link) GitHub Repo
 
     .project-img-box.box
 
       //- Replace the URLs in the src attributes below with interpolated template literals to dynamically add your project images, and add descriptions to the alt attributes
-    each img in project.image_urls
+    each img in projects.image_urls
       img.image(src=img)
 
     nav.nav
