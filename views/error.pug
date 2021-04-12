@@ -1,6 +1,11 @@
 extends layout
 
 block content
-  h1= `${error.message} - Status: ${error.status}`
-  a.button-primary-small(href='/') Home Page
-  pre= error.stack
+  h1= `Server Error`
+  h2= `Error status code: ${err.status} - Server Error`
+  p.error-p= `Human friendly error message: ${err.message}`
+
+  a.home(href=`/`) Home
+
+  div.not-found-stack
+    pre #{err.stack}  

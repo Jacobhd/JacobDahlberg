@@ -10,7 +10,7 @@ app.use('/static', express.static('public'));
 app.set('view engine', 'pug');
 
 
-// routes
+/* ROUTES */
 app.get('/', function (req, res) {
   //console.log(data.projects);
   res.render('index', { projects });
@@ -20,12 +20,8 @@ app.get('/about', function (req, res) {
   res.render('about', data);
 });
 
-// navigating to /project produces status:500
-// app.get('/project', function (req, res) {
-//   res.render('project', data);
-// });
 
-app.get('/projects/:id', function (req, res) {
+app.get('/projects/:id', (req, res) => {
   let id = req.params.id;
   let project = data.projects[id];
   if(project) {
@@ -37,20 +33,22 @@ app.get('/projects/:id', function (req, res) {
 
 
 /* ERROR HANDLERS */ 
-
-/* 404 handler catch undefined route requests */
 app.use((req, res, next) => {
-  const err = new Error('Not Found');
-  err.status = 404;
-  err.message = "Oh noes! Page not found.";
-  next(err);
+  console.log('404 error handler called');
+  res.status(404).render('not-found');
 });
 
-/* renders user friendly 404 page */
 app.use((err, req, res, next) => {
-  res.locals.error = err;
-  res.status(err.status);
-  res.render('error');
+  if (err) {
+    console.log('Global error handler called', err);
+  }
+
+  if (err.status === 404) {
+    res.status(404).render('not-found', { err });
+  } else {
+    err.message = err.message || `Oops! It looks like something went wrong on the server.`;
+    res.status(err.status || 500).render('error', { err });
+  }
 });
 
 
