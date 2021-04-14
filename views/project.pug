@@ -25,17 +25,16 @@ block content
 
           //- Use an `each` iterator and interpolation to dynamically replace the li tags below with the technologies listed for this project
           each tech in technologies
-            li #{technologies}
+            li= tech
 
         //- Add the href values to the links below
-        a.btn-link(href=project.live_link) Live Demo
-        a.btn-link(href=project.github_link) GitHub Repo
+        a.btn-link(href=`${project_live_link}`) Live Demo
+        a.btn-link(href=`${project_github_link}`) GitHub Repo
 
     .project-img-box.box
 
       //- Replace the URLs in the src attributes below with interpolated template literals to dynamically add your project images, and add descriptions to the alt attributes
-    each img in projects.image_urls
-      img.image(src=img)
+    img.image(src=`/static/images/project_${project_urls}`)
 
     nav.nav
       a(href='/')

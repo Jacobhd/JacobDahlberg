@@ -4,7 +4,7 @@
             "id": 0,
             "project_name":"Random Quote Generator",
             "description":"Displays tasteful quotes",
-            "technologies":["JavaScript", "CSS", "HTML"],
+            "technologies":["JavaScript", "CSS3", "HTML5"],
             "live_link":"https://Jacobhd.github.io/Random-Quote-Generator/",
             "github_link":"https://github.com/Jacobhd/Random-Quote-Generator",
             "image_urls": ["/static/images/p1-550x550.png", "/static/images/p1-1200x550.png"]
@@ -14,7 +14,7 @@
             "id": 1,
             "project_name":"List Pagination and Filtering",
             "description":"Paginates list of Students",
-            "technologies":["JavaScript", "CSS", "HTML"],
+            "technologies":["JavaScript", "CSS3", "HTML5"],
             "live_link":"https://Jacobhd.github.io/List-Pagination-and-Filtering/",
             "github_link":"https://github.com/Jacobhd/List-Pagination-and-Filtering",
             "image_urls": ["/static/images/p2-550x550.png", "/static/images/p2-1200x550.png"]
@@ -48,17 +48,6 @@
             "live_link":"https://Jacobhd.github.io/Public-API-Request/",
             "github_link":"https://github.com/Jacobhd/Public-API-Request",
             "image_urls": ["/static/images/p5-550x550.png", "/static/images/p5-1200x550.png", "/static/images/p5-1200x550-2.png"]
-        },
-    
-        { 
-            "id": 5,
-            "project_name":"Static Node.js and Express Site",
-            "description":"Personal portfolio webpage",
-            "technologies":["JavaScript", "CSS3", "HTML5"],
-            "live_link":"https://Jacobhd.github.io/Static-Node-and-Express-Site",
-            "github_link":"https://github.com/Jacobhd/Static-Node.js-and-Express-Site",
-            "image_urls": ["/static/images/p6-550x550.png", "/static/images/p6-1200x550.png"]
         }
-
     ]
 }
