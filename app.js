@@ -1,11 +1,11 @@
 const express = require('express');
-const data = require('./data.json'); //import file
+const data = require('./data.json');
 const projects = data.projects;
 
 const app = express();
 
 app.use(express.urlencoded({ extended: false }));
-// Pulls static files from public folder
+/* Serves static files from public folder */
 app.use('/static', express.static('public'));
 
 app.set('view engine', 'pug');
@@ -14,6 +14,7 @@ app.set('view engine', 'pug');
 /* ROUTES */
 app.get('/', function (req, res) {
   //console.log(data.projects);
+  res.locals.data = data.projects;
   res.render('index', { projects });
 });
 
@@ -21,11 +22,11 @@ app.get('/about', function (req, res) {
   res.render('about', data);
 });
 
-
 app.get('/projects/:id', (req, res) => {
   const id = req.params.id;
   const project = data.projects[id];
   if(project) {
+    res.locals.data = data.projects;
     res.render('project', project);
   } else {
     res.redirect('/404');
