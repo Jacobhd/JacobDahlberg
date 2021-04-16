@@ -6,11 +6,11 @@ Showing the power of Full Stack JavaScript in a modern back end project!
 
 ***
 Before I fully deploy this project to the wider web, you may download the local files and follow instructions below.  
- Navigate to the folder in a terminal/command shell  
- Type: npm install   - to install the project dependencies  
- Type: npm start     - recieve a console message:  
-  "The application is running on localhost:3000"  
- Within a browser type the address: http://localhost:3000/
+ -Navigate to the folder in a terminal/command shell  
+ -Type: npm install   - to install the project dependencies  
+ -Type: npm start     - recieve a console message:  
+  -"The application is running on localhost:3000"  
+ -Within a browser type the address: http://localhost:3000/
 ***
 
 CSS customizing includes:  
