@@ -5,7 +5,7 @@ Sets up a local server to serve the project, includes human friendly error handl
 Showing the power of Full Stack JavaScript in a modern back end project!
 
 ***
-Before I fully deploy this project to the wider web, you may download the local files and follow instructions below  
+Before I fully deploy this project to the wider web, you may download the local files and follow instructions below -  
 Navigate to the folder in a terminal/command shell  
 Type: npm install   - to install the project dependencies  
 Type: npm start     - recieve a message:  
