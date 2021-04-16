@@ -272,8 +272,8 @@ nav a span {
 }
 
 .about-bio p {
-  font-size: 15px;
-  padding-top: 40px;
+  font-size: 17px;
+  padding-top: 35px;
 }
 
 .skills-contact-box ul {
@@ -296,7 +296,7 @@ nav a span {
   max-width: 255px;
   margin: auto 0 5px 0;
   padding: 0.85em 1em;
-  background-color: #333;
+  background-color: #555;
   border: 1px solid transparent;
 }
 
